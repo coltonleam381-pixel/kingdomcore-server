@@ -1,0 +1,11 @@
+admin:
+  debug-enabled: "Debug enabled."
+  debug-disabled: "Debug disabled."
+  allowlist-added: "Allowlisted: {name}"
+  allowlist-removed: "Removed from allowlist: {name}"
+  allowlist-reloaded: "Allowlist reloaded."
+  ability-reset: "Ability reset for {name}."
+  ability-set: "Ability set for {name} to {ability}."
+  ability-level-set: "Ability level set for {name} to {level}."
+  revive-unblocked: "Player unblocked: {name}."
+  hearts-withdraw: "Withdrew {amount} hearts."

@@ -1,0 +1,31 @@
+{
+  "discord_webhook_url": "YOUR_DISCORD_WEBHOOK_URL_HERE",
+  "mode": "remote",
+  "cache_dir": ".season1_cache",
+  "sftp": {
+    "host": "eux1.humbleservers.com",
+    "port": 2022,
+    "username": "emnxwjpu.0fb44e8e"
+  },
+  "remote": {
+    "kingdomcore_db": "plugins/KingdomCore/kingdomcore.db",
+    "stats_dir": "world/stats",
+    "playerdata_dir": "world/playerdata",
+    "log_file": "logs/latest.log"
+  },
+  "ping": {
+    "host": "eux1.humbleservers.com"
+  },
+  "local": {
+    "kingdomcore_db": "../plugins/KingdomCore/kingdomcore.db",
+    "stats_dir": "../world/stats",
+    "playerdata_dir": "../world/playerdata"
+  },
+  "manual_online_players": [],
+  "weights": {
+    "kd": 35,
+    "hearts": 22,
+    "playtime": 17,
+    "legendary": 26
+  }
+}

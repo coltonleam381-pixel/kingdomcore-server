@@ -1,0 +1,51 @@
+# Archivo de idioma español para el complemento RC Cooldown
+
+# Mensajes de cooldown
+cooldown_enchantment: '&c[RC Cooldown] ¡Encantamiento en cooldown! Restante: &e{seconds}
+  &csegundos'
+cooldown_item: '&c[RC Cooldown] ¡Este objeto está en cooldown! Restante: &e{seconds}
+  &csegundos'
+cooldown_weapon: '&c[RC Cooldown] ¡Esta arma está en cooldown! Restante: &e{seconds}
+  &csegundos'
+
+# Mensajes de comandos
+command_no_permission: '&c¡No tienes permiso para usar este comando!'
+command_usage: '&cUso: /rccd <reload|list|add|delete>'
+command_reload_success: '&a[RC Cooldown] ¡Configuración recargada!'
+command_list_empty: '&e[RC Cooldown] No hay cooldowns activos.'
+command_list_header: '&6=== Cooldowns Activos ==='
+command_list_footer: '&6========================'
+command_list_item: '&a• &f{item} &7- &e{cooldown} &7seg &7({click_type})'
+command_list_enchantment: '&b• &fenchantment:{enchantment} &7- &e{cooldown} &7seg
+  &7({click_type})'
+
+# Comando add
+command_add_usage: '&cUso: /rccd add <id de objeto o nombre de encantamiento> <right_click|left_click>
+  <segundos>'
+command_add_invalid_click: '&c¡Tipo de clic inválido! Usa: right_click o left_click'
+command_add_invalid_cooldown: '&c¡El cooldown debe ser mayor que 0!'
+command_add_invalid_seconds: '&cNúmero de segundos inválido: {seconds}'
+command_add_item_success: '&a[RC Cooldown] Objeto {item} agregado con cooldown de
+  {cooldown} segundos ({click_type})'
+command_add_enchantment_success: '&a[RC Cooldown] Encantamiento {enchantment} agregado
+  con cooldown de {cooldown} segundos ({click_type})'
+command_add_not_found: '&cNo encontrado como objeto o encantamiento: {item}'
+command_add_examples: '&eVerifica la ortografía. Ejemplos: DIAMOND_SWORD, riptide,
+  channeling'
+
+# Comando delete
+command_delete_usage: '&cUso: /rccd delete <id de objeto o nombre de encantamiento>'
+command_delete_item_success: '&a[RC Cooldown] Objeto {item} eliminado del config'
+command_delete_item_not_found: '&c[RC Cooldown] Objeto {item} no encontrado en el
+  config'
+command_delete_enchantment_success: '&a[RC Cooldown] Encantamiento {enchantment} eliminado
+  del config'
+command_delete_enchantment_not_found: '&c[RC Cooldown] Encantamiento {enchantment}
+  no encontrado en el config'
+command_delete_not_found: '&cNo encontrado como objeto o encantamiento: {item}'
+
+# Otro
+command_unknown: '&c¡Comando desconocido! Usa: /rccd <reload|list|add|delete>'
+click_type_right: ClicD
+click_type_left: ClicI
+

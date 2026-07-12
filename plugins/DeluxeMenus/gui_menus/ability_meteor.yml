@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::meteor_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 27-28
+      - 36-37
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymenutwo'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 9-10
+      - 18-19
+    display_name: '&#FFB266&lMeteor Info'
+    lore:
+      - '&8Use: &fRMB enters flight. SPACE exits early with no blast.'
+      - '&8Identity: &fCommit to a line, then crash for area finish.'
+      - '&8Control: &fEarly exit lets you cancel risky trajectories.'
+      - '&8Cooldown: &fLower at higher levels.'
+      - '&8Scaling: &fLonger flight, larger blast, stronger end impact.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 25-26
+      - 34-35
+    display_name: '&a&lChoose Meteor'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_meteor%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability meteor'

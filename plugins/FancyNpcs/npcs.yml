@@ -1,0 +1,397 @@
+npcs:
+  72180bd8-0fbf-4676-8f04-75d279b1b514:
+    name: hey
+    creator: e2107f23-f267-4089-8d45-13c2affd856b
+    displayName: '&6&lAbility Master'
+    type: PLAYER
+    location:
+      world: world
+      x: -60.49288627654279
+      y: 67.0
+      z: -142.47345620444398
+      yaw: -43.921387
+      pitch: 24.833324
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.3
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      identifier: https://www.minecraftskins.com/uploads/skins/2026/02/17/emperor-23872011.png?v940
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: player_command_as_op
+          value: dm open abilitymen
+  659e4be7-dd22-4f9e-b37e-6eab9a2ca330:
+    name: upgrade
+    creator: e2107f23-f267-4089-8d45-13c2affd856b
+    displayName: '&b&lAbility Upgrades'
+    type: PLAYER
+    location:
+      world: world
+      x: -48.57034539444806
+      y: 67.0
+      z: -142.4962409158562
+      yaw: 44.91333
+      pitch: 18.879627
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.3
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      identifier: https://www.minecraftskins.com/uploads/skins/2026/02/06/the-emperor-23847495.png?v940
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: player_command_as_op
+          value: abilityupgrade
+  3c466a6f-b432-469a-99c1-6c9befa75261:
+    name: beacon_clicker
+    creator: 409d5b24-ab0c-3f46-99ae-3c7000f9a1c0
+    displayName: <empty>
+    type: INTERACTION
+    location:
+      world: world
+      x: -49.51840416391214
+      y: 80.477942527988
+      z: -129.54022615574647
+      yaw: 135.88641
+      pitch: 75.530014
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: kcraft revive_beacon
+  72943055-f91f-4436-a84c-39580256d96a:
+    name: crown_clicker
+    creator: 409d5b24-ab0c-3f46-99ae-3c7000f9a1c0
+    displayName: <empty>
+    type: INTERACTION
+    location:
+      world: world
+      x: -46.546838379359194
+      y: 80.0
+      z: -136.46989813721402
+      yaw: 91.85089
+      pitch: 69.45193
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: kcraft crown
+  fbc1d0e3-df95-48de-be13-f84e554c49e6:
+    name: heart_clicker
+    creator: 409d5b24-ab0c-3f46-99ae-3c7000f9a1c0
+    displayName: <empty>
+    type: INTERACTION
+    location:
+      world: world
+      x: -59.48573731254849
+      y: 80.85295768262161
+      z: -129.52877748250887
+      yaw: -135.7569
+      pitch: 90.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: kcraft heart
+  a30dd3b9-6005-4d3c-88ec-25160f9f3b00:
+    name: warden_clicker
+    creator: 409d5b24-ab0c-3f46-99ae-3c7000f9a1c0
+    displayName: <empty>
+    type: INTERACTION
+    location:
+      world: world
+      x: -62.40931909179083
+      y: 80.74051870273684
+      z: -136.52938721763212
+      yaw: -90.621765
+      pitch: 83.8042
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: kcraft warden_cp
+  80b6beb3-53de-4a06-be40-faa1c5d2db33:
+    name: mace_clicker
+    creator: 409d5b24-ab0c-3f46-99ae-3c7000f9a1c0
+    displayName: <empty>
+    type: INTERACTION
+    location:
+      world: world
+      x: -59.4863497826637
+      y: 80.0
+      z: -143.47929125776363
+      yaw: -42.838745
+      pitch: 88.62756
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: kcraft mace
+  4c5a98a2-b4b2-4f2b-bbc2-b46d9fed0233:
+    name: trident_clicker
+    creator: 409d5b24-ab0c-3f46-99ae-3c7000f9a1c0
+    displayName: <empty>
+    type: INTERACTION
+    location:
+      world: world
+      x: -49.50407750545898
+      y: 80.0
+      z: -143.52612434002606
+      yaw: 44.954224
+      pitch: 90.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: kcraft trident
+  a9d21ed5-67e2-49ce-afba-a2a90545f353:
+    name: mace_clicker1
+    creator: 409d5b24-ab0c-3f46-99ae-3c7000f9a1c0
+    displayName: <empty>
+    type: INTERACTION
+    location:
+      world: world
+      x: -59.41929755183112
+      y: 81.20000004768372
+      z: -143.5188929380027
+      yaw: -38.249756
+      pitch: 90.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: kcraft mace
+  25a59f8e-b1b0-4466-bb97-064645b382f1:
+    name: trident_clicker1
+    creator: 409d5b24-ab0c-3f46-99ae-3c7000f9a1c0
+    displayName: <empty>
+    type: INTERACTION
+    location:
+      world: world
+      x: -49.450216012657506
+      y: 81.05056272435024
+      z: -143.5487089077343
+      yaw: -125.78162
+      pitch: 14.199751
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: kcraft trident
+  0ea7dd0c-d391-43eb-ac7a-c861e00b943f:
+    name: scythe_clicker1
+    creator: 409d5b24-ab0c-3f46-99ae-3c7000f9a1c0
+    displayName: <empty>
+    type: INTERACTION
+    location:
+      world: world
+      x: -54.55017862509359
+      y: 81.20000004768372
+      z: -144.49564799299975
+      yaw: -0.099609375
+      pitch: 90.0
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: kcraft scythe
+  9a28280d-70e1-4324-8330-d6b44a760829:
+    name: scythe_clicker
+    creator: 409d5b24-ab0c-3f46-99ae-3c7000f9a1c0
+    displayName: <empty>
+    type: INTERACTION
+    location:
+      world: world
+      x: -54.51078949391558
+      y: 80.0
+      z: -144.54315108332776
+      yaw: -1.979126
+      pitch: 87.68642
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: kcraft scythe
+  31a9a73f-fe4d-41f8-9065-a26d9b5f02a3:
+    name: BountyNPC
+    creator: 409d5b24-ab0c-3f46-99ae-3c7000f9a1c0
+    displayName: Bounty
+    type: PLAYER
+    location:
+      world: world
+      x: -54.49674287775379
+      y: 86.0
+      z: -136.45343144599855
+      yaw: 0.833403
+      pitch: 2.7354903
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.5
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      identifier: https://minesk.in/2e82cc5a67eb46e48641611db66ba5a1
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: bounty391381

@@ -1,0 +1,158 @@
+info:
+  namespace: kingdomcore
+
+recipes:
+  crafting_shaped:
+
+    # === HEART ===
+    heart:
+      enabled: true
+      result:
+        item: kingdomcore:heart
+        amount: 1
+      pattern:
+        - "ABA"
+        - "CDC"
+        - "ABA"
+      ingredients:
+        A:
+          material: DIAMOND_BLOCK
+          amount: 2
+        B:
+          material: OBSIDIAN
+          amount: 10
+        C:
+          material: NETHERITE_INGOT
+        D:
+          material: NETHER_STAR
+
+    # === SCYTHE ===
+    scythe:
+      enabled: true
+      result:
+        item: kingdomcore:scythe
+        amount: 1
+      pattern:
+        - "SWS"
+        - "WNW"
+        - "HNH"
+      ingredients:
+        S:
+          material: WITHER_SKELETON_SKULL
+        W:
+          material: WITHER_ROSE
+        N:
+          material: NETHERITE_INGOT
+        H:
+          item: kingdomcore:heart
+
+    # === MACE ===
+    mace:
+      enabled: true
+      result:
+        item: kingdomcore:mace
+        amount: 1
+      pattern:
+        - "ABC"
+        - "DEB"
+        - "FDA"
+      ingredients:
+        A:
+          material: PURPLE_CANDLE
+        B:
+          material: WIND_CHARGE
+        C:
+          material: CREEPER_HEAD
+        D:
+          material: CAMPFIRE
+        E:
+          material: HEAVY_CORE
+        F:
+          material: BREEZE_ROD
+
+    # === WARDEN CHESTPLATE ===
+    warden_cp:
+      enabled: true
+      result:
+        item: kingdomcore:warden_cp
+        amount: 1
+      pattern:
+        - "A A"
+        - "BOB"
+        - "CAC"
+      ingredients:
+        A:
+          material: ECHO_SHARD
+        B:
+          material: SCULK_SHRIEKER
+        O:
+          material: NETHER_STAR
+        C:
+          item: kingdomcore:heart
+
+    # === REVIVAL BEACON ===
+    revive_beacon:
+      enabled: true
+      result:
+        item: kingdomcore:revive_beacon
+        amount: 1
+      pattern:
+        - "ABA"
+        - "BCB"
+        - "DDD"
+      ingredients:
+        A:
+          material: GOLD_BLOCK
+        B:
+          item: kingdomcore:heart
+        C:
+          material: BEACON
+        D:
+          material: NETHERITE_INGOT
+
+    # === POSEIDON TRIDENT ===
+    trident:
+      enabled: true
+      result:
+        item: kingdomcore:trident
+        amount: 1
+      pattern:
+        - "ABC"
+        - "DEB"
+        - "DDA"
+      ingredients:
+        A:
+          material: HEART_OF_THE_SEA
+        B:
+          material: NETHERITE_INGOT
+        C:
+          material: ENCHANTED_GOLDEN_APPLE
+        D:
+          item: kingdomcore:heart
+        E:
+          material: TRIDENT
+
+    # === CROWN ===
+    crown:
+      enabled: true
+      result:
+        item: kingdomcore:crown
+        amount: 1
+      pattern:
+        - "ABA"
+        - "CDC"
+        - "EEE"
+      ingredients:
+        A:
+          material: REDSTONE_BLOCK
+          amount: 10
+        B:
+          material: EMERALD_BLOCK
+        C:
+          material: GOLD_BLOCK
+          amount: 10
+        D:
+          material: DIAMOND_BLOCK
+          amount: 10
+        E:
+          item: kingdomcore:heart

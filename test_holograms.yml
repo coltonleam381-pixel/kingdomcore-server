@@ -1,0 +1,767 @@
+version: 2 # DO NOT CHANGE
+holograms:
+  ability:
+    type: TEXT
+    location:
+      world: world
+      x: -60.5
+      y: 70.02579498291016
+      z: -142.5
+      yaw: 1.3939269
+      pitch: 36.576313
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.03
+    scale_y: 1.03
+    scale_z: 1.03
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&7Choose your permanent ability'
+    - '&cOne ability per player'
+    - '&eClick to open'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  bl:
+    type: BLOCK
+    location:
+      world: world
+      x: -61.609169006347656
+      y: 69.82990264892578
+      z: -140.46885681152344
+      yaw: 149.49573
+      pitch: 33.000046
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.4
+    scale_y: 1.4
+    scale_z: 1.4
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    billboard: fixed
+    block: COBBLESTONE
+  bl2:
+    type: BLOCK
+    location:
+      world: world
+      x: -58.33658981323242
+      y: 68.12520599365234
+      z: -143.0825958251953
+      yaw: -165.0
+      pitch: 15.0
+    visibility_distance: 20
+    visibility: ALL
+    persistent: true
+    scale_x: 1.4
+    scale_y: 1.4
+    scale_z: 1.4
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    billboard: fixed
+    block: GRASS_BLOCK
+  bl3:
+    type: BLOCK
+    location:
+      world: world
+      x: -60.70000076293945
+      y: 71.27171325683594
+      z: -144.31898498535156
+      yaw: 0.0
+      pitch: 20.0
+    visibility_distance: 20
+    visibility: ALL
+    persistent: true
+    scale_x: 1.4
+    scale_y: 1.4
+    scale_z: 1.4
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    billboard: fixed
+    block: DEEPSLATE
+  upg:
+    type: TEXT
+    location:
+      world: world
+      x: -48.5
+      y: 69.97383117675781
+      z: -142.5
+      yaw: 1.3939269
+      pitch: 36.576313
+    visibility_distance: 20
+    visibility: ALL
+    persistent: true
+    scale_x: 1.03
+    scale_y: 1.03
+    scale_z: 1.03
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&7Upgrade with Heart items'
+    - '&cHold hearts in MAIN HAND'
+    - '&aLVL1: 3 Hearts'
+    - '&eLVL2: 4 Hearts'
+    - '&6LVL3: 5 Hearts'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  the_crown:
+    type: ITEM
+    location:
+      world: world
+      x: -46.546836853027344
+      y: 80.5
+      z: -136.4698944091797
+      yaw: 91.85089
+      pitch: 0.0
+    visibility_distance: 20
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    billboard: fixed
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4440
+      id: minecraft:paper
+      count: 1
+      components:
+        minecraft:attribute_modifiers: '[{amount:20.0d,id:"minecraft:da8dd627-4f09-3173-8666-b55b6ee94bbe",operation:"add_value",slot:"head",type:"minecraft:max_health"}]'
+        minecraft:custom_name: '{color:"gold",italic:0b,text:"Crown"}'
+        minecraft:custom_model_data: '{floats:[10079.0f]}'
+        minecraft:custom_data: '{itemsadder:{id:"crown",namespace:"kingdomcore"}}'
+        minecraft:item_name: '{color:"gold",italic:0b,text:"Crown"}'
+      schema_version: 1
+    linkedNpc: crown_clicker
+  beacon:
+    type: ITEM
+    location:
+      world: world
+      x: -49.51840591430664
+      y: 80.97794342041016
+      z: -129.54022216796875
+      yaw: 135.88641
+      pitch: 0.0
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    billboard: fixed
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4440
+      id: minecraft:beacon
+      count: 1
+      components:
+        minecraft:custom_name: '{color:"aqua",italic:0b,text:"Revival Beacon"}'
+        minecraft:custom_model_data: '{floats:[10000.0f]}'
+        minecraft:custom_data: '{itemsadder:{id:"revive_beacon",namespace:"kingdomcore"}}'
+        minecraft:item_name: '{color:"aqua",italic:0b,text:"Revival Beacon"}'
+      schema_version: 1
+    linkedNpc: beacon_clicker
+  heart:
+    type: ITEM
+    location:
+      world: world
+      x: -59.48573684692383
+      y: 81.35295867919922
+      z: -129.52877807617188
+      yaw: -135.7569
+      pitch: 0.0
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    billboard: fixed
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4440
+      id: minecraft:nether_star
+      count: 1
+      components:
+        minecraft:custom_name: '{color:"red",italic:0b,text:"Heart"}'
+        minecraft:custom_model_data: '{floats:[10000.0f]}'
+        minecraft:custom_data: '{itemsadder:{id:"heart",namespace:"kingdomcore"}}'
+        minecraft:item_name: '{color:"red",italic:0b,text:"Heart"}'
+      schema_version: 1
+    linkedNpc: heart_clicker
+  wardencp:
+    type: ITEM
+    location:
+      world: world
+      x: -62.40932083129883
+      y: 81.24051666259766
+      z: -136.52938842773438
+      yaw: -90.621765
+      pitch: 0.0
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    billboard: fixed
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4440
+      id: minecraft:iron_chestplate
+      count: 1
+      components:
+        minecraft:item_model: '"kingdomcore:warden_cp"'
+        minecraft:equippable: '{asset_id:"kingdomcore:warden",slot:"chest"}'
+      schema_version: 1
+    linkedNpc: warden_clicker
+  mace:
+    type: ITEM
+    location:
+      world: world
+      x: -59.50664138793945
+      y: 81.5687026977539
+      z: -143.38804626464844
+      yaw: -35.92975
+      pitch: 15.611411
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 2.5
+    scale_y: 2.5
+    scale_z: 2.5
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    billboard: fixed
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4440
+      id: minecraft:mace
+      count: 1
+      components:
+        minecraft:custom_name: '{color:"gold",italic:0b,text:"Mace"}'
+        minecraft:custom_model_data: '{floats:[10000.0f]}'
+        minecraft:custom_data: '{itemsadder:{id:"mace",namespace:"kingdomcore"}}'
+        minecraft:item_name: '{color:"gold",italic:0b,text:"Mace"}'
+      schema_version: 1
+  scythe:
+    type: ITEM
+    location:
+      world: world
+      x: -54.51041030883789
+      y: 81.19999694824219
+      z: -144.5094451904297
+      yaw: 0.18951416
+      pitch: 2.2002974
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    billboard: fixed
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4440
+      id: minecraft:netherite_sword
+      count: 1
+      components:
+        minecraft:custom_name: '{color:"dark_purple",italic:0b,text:"Scythe"}'
+        minecraft:custom_model_data: '{floats:[10000.0f]}'
+        minecraft:custom_data: '{itemsadder:{id:"scythe",namespace:"kingdomcore"}}'
+        minecraft:item_name: '{color:"dark_purple",italic:0b,text:"Scythe"}'
+      schema_version: 1
+  trident:
+    type: ITEM
+    location:
+      world: world
+      x: -49.427024841308594
+      y: 80.8546142578125
+      z: -143.57955932617188
+      yaw: -135.0
+      pitch: 0.0
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    billboard: fixed
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4440
+      id: minecraft:netherite_sword
+      count: 1
+      components:
+        minecraft:custom_name: '{color:"aqua",italic:0b,text:"Poseidon Trident"}'
+        minecraft:custom_model_data: '{floats:[10001.0f]}'
+        minecraft:custom_data: '{itemsadder:{id:"trident",namespace:"kingdomcore"}}'
+        minecraft:item_name: '{color:"aqua",italic:0b,text:"Poseidon Trident"}'
+      schema_version: 1
+  HeartText:
+    type: TEXT
+    location:
+      world: world
+      x: -59.54857635498047
+      y: 82.19999694824219
+      z: -129.45143127441406
+      yaw: -138.13623
+      pitch: 76.27509
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - Heart
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  WardenCpText:
+    type: TEXT
+    location:
+      world: world
+      x: -62.46623611450195
+      y: 81.9524154663086
+      z: -136.50830078125
+      yaw: -89.23877
+      pitch: 60.236774
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - Warden's Chestplate
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  MaceText:
+    type: TEXT
+    location:
+      world: world
+      x: -59.52714538574219
+      y: 82.19999694824219
+      z: -143.47084045410156
+      yaw: -38.49292
+      pitch: 89.52942
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - Mace
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  ScytheText:
+    type: TEXT
+    location:
+      world: world
+      x: -54.474327087402344
+      y: 82.5687026977539
+      z: -144.3000030517578
+      yaw: 0.5632324
+      pitch: 44.002193
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - Scythe
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  Poseidon's:
+    type: TEXT
+    location:
+      world: world
+      x: -49.53703308105469
+      y: 82.7037353515625
+      z: -143.49252319335938
+      yaw: 43.32312
+      pitch: 65.648285
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - Poseidon's Trident
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  CrownText:
+    type: TEXT
+    location:
+      world: world
+      x: -46.51909255981445
+      y: 81.19999694824219
+      z: -136.5500946044922
+      yaw: 90.990234
+      pitch: 48.511803
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - Crown
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  RevivalText:
+    type: TEXT
+    location:
+      world: world
+      x: -49.49720764160156
+      y: 81.77701568603516
+      z: -129.53407287597656
+      yaw: 136.9497
+      pitch: 63.68755
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - Revival Beacon
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  recipe_warden:
+    type: TEXT
+    location:
+      world: world
+      x: -62.53955841064453
+      y: 80.46199035644531
+      z: -138.92245483398438
+      yaw: -73.556244
+      pitch: 42.75318
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#0088aa&l🛡 Warden Chestplate Recipe'
+    - '&#00aa884x &3Echo Shard'
+    - '&#00aa884x &1Sculk Catalyst'
+    - '&#00aa881x &9Netherite Chestplate'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  recipe_mace:
+    type: TEXT
+    location:
+      world: world
+      x: -57.63055419921875
+      y: 80.46260070800781
+      z: -144.0077362060547
+      yaw: -18.60556
+      pitch: 19.530188
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#ff5500&l🔨 The Mace Recipe'
+    - '&#ff77004x &8Netherite Block'
+    - '&#ff77004x &cHeavy Core'
+    - '&#ff77001x &4Dragon Egg'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  recipe_trident:
+    type: TEXT
+    location:
+      world: world
+      x: -48.31187057495117
+      y: 80.831298828125
+      z: -141.98211669921875
+      yaw: 52.858902
+      pitch: 54.645233
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00aaff&l🔱 Poseidon Trident Recipe'
+    - '&#00ccff4x &3Prismarine Bricks'
+    - '&#00ccff4x &9Heart of the Sea'
+    - '&#00ccff1x &bNetherite Trident'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  recipe_scythe:
+    type: TEXT
+    location:
+      world: world
+      x: -52.67479705810547
+      y: 81.15814971923828
+      z: -144.5973663330078
+      yaw: 6.023646
+      pitch: 45.02278
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#aa00ff&l☠ The Scythe Recipe'
+    - '&#cc33ff4x &8Netherite Ingot'
+    - '&#cc33ff4x &5Wither Skeleton Skull'
+    - '&#cc33ff1x &dNether Star'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  recipe_crown:
+    type: TEXT
+    location:
+      world: world
+      x: -47.0146484375
+      y: 80.78289794921875
+      z: -134.3089141845703
+      yaw: 106.76199
+      pitch: 27.340662
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#ffcc00&l👑 The Crown Recipe'
+    - '&#ffaa004x &eGold Block'
+    - '&#ffaa004x &bDiamond Block'
+    - '&#ffaa001x &aEmerald Block'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  recipe_heart:
+    type: TEXT
+    location:
+      world: world
+      x: -61.09280776977539
+      y: 80.831298828125
+      z: -131.09323120117188
+      yaw: 118.00105
+      pitch: 56.207497
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#ff3333&l❤ Heart Recipe'
+    - '&#ff55554x &bDiamond Block (2 per slot)'
+    - '&#ff55554x &5Obsidian (10 per slot)'
+    - '&#ff55552x &8Netherite Ingot'
+    - '&#ff55552x &eTrial Key'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  recipe_beacon:
+    type: TEXT
+    location:
+      world: world
+      x: -48.166229248046875
+      y: 80.8546142578125
+      z: -130.98947143554688
+      yaw: 123.92175
+      pitch: 49.812332
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00eeff&l✨ Revival Beacon Recipe'
+    - '&#00ccff2x &eGold Block'
+    - '&#00ccff2x &cCustom Heart'
+    - '&#00ccff3x &8Netherite Ingot'
+    - '&#00ccff1x &bBeacon'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+  mace_cd:
+    type: TEXT
+    location:
+      world: world
+      x: -58.70000076293945
+      y: 81.69999694824219
+      z: -142.6999969482422
+      yaw: -42.726562
+      pitch: 71.88671
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#FFaa00&lMace Status'
+    - '%kingdomcore_status_mace%'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1

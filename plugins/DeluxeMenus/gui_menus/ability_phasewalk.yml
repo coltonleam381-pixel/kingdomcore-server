@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::phasewalk_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 10-11
+      - 19-20
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymen'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 21-22
+      - 13-14
+    display_name: '&#5A5A66&lPhase Walk Info'
+    lore:
+      - '&8Use: &fRMB enters temporary phase state.'
+      - '&8Identity: &fIgnore contact and pass through solid paths.'
+      - '&8Vision: &fBuilt for clean reposition, not long fights.'
+      - '&8Cooldown: &f50 seconds.'
+      - '&8Scaling: &fLonger phase time and stronger movement sustain.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 15-16
+      - 24-25
+    display_name: '&a&lChoose Phase Walk'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_phase_walk%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability phase_walk'

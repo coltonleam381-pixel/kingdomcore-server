@@ -1,0 +1,157 @@
+info:
+  namespace: gui
+
+font_images:
+  abilitymen:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "abilitymen.png"
+    y_position: 73
+  abilitymenutwo:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "abilitymenutwo.png"
+    y_position: 73
+  hulk_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "hulkgui.png"
+    y_position: 73
+  thor_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "thor.png"
+    y_position: 73
+  zeus_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "zeus.png"
+    y_position: 73
+  skybreaker_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "skyb.png"
+    y_position: 73
+  protocol_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "protocol.png"
+    y_position: 73
+  phasestep_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "pstep.png"
+    y_position: 73
+  sanguinefog_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "sangfog.png"
+    y_position: 73
+  dash_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "dash.png"
+    y_position: 73
+  icenova_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "ice_nova.png"
+    y_position: 73
+  phasewalk_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "phase_walk.png"
+    y_position: 73
+  atlant_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "atlant.png"
+    y_position: 73
+  heartshield_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "hearts.png"
+    y_position: 73
+  meteor_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "meteor.png"
+    y_position: 73
+  lifesteal_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "lifesteal.png"
+    y_position: 73
+  recall_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "recall.png"
+    y_position: 73
+  berserk_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "berserk.png"
+    y_position: 73
+  protector_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "protector.png"
+    y_position: 73
+
+  upgrade_noability_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "upgradenoability.png"
+    y_position: 73
+  upgrade_lvl1_green_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "upgradelvl1green.png"
+    y_position: 73
+  upgrade_lvl1_red_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "upgradelvl1red.png"
+    y_position: 73
+  upgrade_lvl2_green_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "upgradelvl2green.png"
+    y_position: 73
+  upgrade_lvl2_red_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "upgradelvl2red.png"
+    y_position: 73
+  upgrade_lvl3_green_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "upgradelvl3green.png"
+    y_position: 73
+  upgrade_lvl3_red_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "upgradelvl3red.png"
+    y_position: 73
+  upgrade_lvlmax_gold_gui:
+    show_in_gui: true
+    suggest_in_command: false
+    path: "upgradelvlmaxgold.png"
+    y_position: 73
+
+items:
+  blank:
+    display_name: ''
+    permission: gui.blank
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+        - blank.png
+
+minecraft_lang_overwrite:
+  inventory:
+    entries:
+      "container.inventory": "&r"
+    languages:
+      - ALL

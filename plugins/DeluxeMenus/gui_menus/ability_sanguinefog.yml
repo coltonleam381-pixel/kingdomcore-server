@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::sanguinefog_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 1-2
+      - 10-11
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymen'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 12-13
+      - 4-5
+    display_name: '&#B266FF&lSanguine Fog Info'
+    lore:
+      - '&8Use: &fRMB drops a control fog around the cast point.'
+      - '&8Identity: &fVision denial that breaks enemy awareness.'
+      - '&8Rhythm: &fCooldown starts after fog duration fully ends.'
+      - '&8Duration: &fGrows with level.'
+      - '&8Scaling: &fAdds disorientation and then offensive pressure.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 6-7
+      - 15-16
+    display_name: '&a&lChoose Sanguine Fog'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_sanguine_fog%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability sanguine_fog'

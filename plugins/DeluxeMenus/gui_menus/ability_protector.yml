@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::protector_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 9-10
+      - 18-19
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymenutwo'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 13-14
+      - 21-22
+    display_name: '&#FF4D4D&lProtector Info'
+    lore:
+      - '&8Use: &fRMB places a fixed protective sphere.'
+      - '&8Identity: &fHold space and deny entries through the shell.'
+      - '&8Control: &fProjectiles and crossing attempts get shut down.'
+      - '&8Cooldown: &f45 seconds.'
+      - '&8Scaling: &fLonger hold, stronger repel, stronger shell punish.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 16-17
+      - 25-26
+    display_name: '&a&lChoose Protector'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_protector%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability protector'

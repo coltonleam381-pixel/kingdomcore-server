@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::heartshield_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 9-10
+      - 18-19
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymenutwo'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 12-13
+      - 4-5
+    display_name: '&#FF4D4D&lHeart Shield Info'
+    lore:
+      - '&8Use: &fRMB converts pressure into temporary survival.'
+      - '&8Identity: &fBig absorption window with utility layers.'
+      - '&8Rhythm: &fBest used before hard trades, not after.'
+      - '&8Cooldown: &f50 seconds.'
+      - '&8Scaling: &fMore hearts, longer uptime, stronger follow-up buffs.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 16-17
+      - 25-26
+    display_name: '&a&lChoose Heart Shield'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_heart_shield%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability heart_shield'

@@ -1,0 +1,77 @@
+info:
+  namespace: kingdomcore
+
+items:
+  heart:
+    display_name: '&cHeart'
+    permission: kingdomcore.item.heart
+    resource:
+      material: NETHER_STAR
+      generate: true
+      textures:
+        - item/heart
+
+
+  crown:
+    display_name: '&6Crown'
+    permission: kingdomcore.item.crown
+    resource:
+      material: NETHERITE_HELMET
+      generate: false
+      model_path: item/crown
+    attribute_modifiers:
+      head:
+        maxHealth: 20
+
+  revive_beacon:
+    display_name: '&bRevival Beacon'
+    permission: kingdomcore.item.revive_beacon
+    resource:
+      material: BEACON
+      generate: true
+      textures:
+        - item/revival_beacon
+
+  mace:
+    display_name: '&6Mace'
+    permission: kingdomcore.item.mace
+    resource:
+      material: MACE
+      generate: false
+      model_path: item/mace
+
+  scythe:
+    display_name: '&5Scythe'
+    permission: kingdomcore.item.scythe
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: item/scythe
+
+  warden_cp:
+    display_name: '&3Warden Chestplate'
+    permission: kingdomcore.item.warden_cp
+    resource:
+      material: LEATHER_CHESTPLATE
+      generate: true
+      textures:
+        - item/warden_cp
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: warden
+
+  trident:
+    display_name: '&bPoseidon Trident'
+    permission: kingdomcore.item.trident
+    resource:
+      material: TRIDENT
+      generate: true
+      textures:
+        - item/trident_material
+armors_rendering:
+  warden:
+    color: "#0a2d3e"
+    resource:
+      layer_1: armor/warden_layer_1
+      layer_2: armor/warden_layer_1

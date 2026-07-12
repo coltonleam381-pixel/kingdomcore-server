@@ -1,0 +1,43 @@
+size: 54
+menu_title: ':offset_-48::thor_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 0-1
+      - 9-10
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymen'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 25-26
+      - 34-35
+    display_name: '&#4DA6FF&lThor Info'
+    lore:
+      - '&8Use: &fRMB marks enemies, LMB calls lightning on all marks.'
+      - '&8Identity: &fSetup-burst ability that rewards clean timing.'
+      - '&8Window: &fMarks expire, so delayed strikes lose value.'
+      - '&8Cooldown: &fStarts on strike or on mark timeout.'
+      - '&8Scaling: &fMore marks, longer window, stronger punishment.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 7-8
+      - 16-17
+    display_name: '&a&lChoose Thor'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_thor%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability thor'
+#baka

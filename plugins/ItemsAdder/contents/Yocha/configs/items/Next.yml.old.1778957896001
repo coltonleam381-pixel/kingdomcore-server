@@ -1,0 +1,10 @@
+info:
+  namespace: yocha
+items:
+  next:
+      display_name: '&6Next'
+      resource:
+        material: PAPER
+        generate: true
+        textures: 
+          - 'items/next.png'

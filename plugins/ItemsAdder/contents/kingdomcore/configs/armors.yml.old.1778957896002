@@ -1,0 +1,8 @@
+info:
+  namespace: kingdomcore
+armors_rendering:
+  warden:
+    color: "#0a2d3e"
+    resource:
+      layer_1: armor/warden_layer_1
+      layer_2: armor/warden_layer_1

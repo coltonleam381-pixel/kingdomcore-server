@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::zeus_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 0-1
+      - 9-10
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymen'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 25-26
+      - 34-35
+    display_name: '&#FFD84D&lZeus Info'
+    lore:
+      - '&8Use: &fRMB calls a pulse storm over the target zone.'
+      - '&8Identity: &fSustained area chaos, not one single burst.'
+      - '&8Pressure: &fEvery pulse can force movement mistakes.'
+      - '&8Cooldown: &f50 seconds.'
+      - '&8Scaling: &fMore pulses, wider storm, tighter lockdown.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 7-8
+      - 16-17
+    display_name: '&a&lChoose Zeus'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_zeus%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability zeus'

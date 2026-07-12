@@ -1,0 +1,21 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "lifestealz_defaultheart",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/medium_heart"
+        }
+      }
+
+
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/nether_star"
+    }
+  }
+}

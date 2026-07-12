@@ -1,0 +1,81 @@
+info:
+  namespace: kingdomcore
+equipments:
+  warden:
+    layer_1: armor/warden_layer_1
+    layer_2: armor/warden_layer_1
+items:
+  heart:
+    display_name: '&cHeart'
+    permission: kingdomcore.item.heart
+    resource:
+      material: NETHER_STAR
+      generate: true
+      textures:
+      - item/heart
+  
+  crown:
+    display_name: '&6Crown'
+    permission: kingdomcore.item.crown
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/crown
+    behaviours:
+      hat: true
+    attribute_modifiers:
+      head:
+        armor: 3
+        armor_toughness: 2
+  
+  revive_beacon:
+    display_name: '&bRevival Beacon'
+    permission: kingdomcore.item.revive_beacon
+    resource:
+      material: BEACON
+      generate: true
+      textures:
+      - item/revival_beacon
+  
+  mace:
+    display_name: '&6Mace'
+    permission: kingdomcore.item.mace
+    resource:
+      material: MACE
+      generate: false
+      model_id: 10002
+      model_path: item/mace
+  
+  scythe:
+    display_name: '&5Scythe'
+    permission: kingdomcore.item.scythe
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_id: 10003
+      model_path: item/scythe
+  
+  warden_cp:
+    display_name: '&3Warden Chestplate'
+    permission: kingdomcore.item.warden_cp
+    resource:
+      material: IRON_CHESTPLATE
+      generate: true
+      textures:
+      - item/warden_cp
+    equipment:
+      id: warden
+      slot: CHEST
+      slot_attribute_modifiers:
+        armor: 8
+        armor_toughness: 2
+  
+  trident:
+    display_name: '&bPoseidon Trident'
+    permission: kingdomcore.item.trident
+    material: TRIDENT
+    graphics:
+      icon: item/trident_material
+      models:
+        normal: item/trident
+        throwing: item/trident_throwing

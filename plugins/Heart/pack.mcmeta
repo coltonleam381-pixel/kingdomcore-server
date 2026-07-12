@@ -1,0 +1,18 @@
+{
+  "pack": {
+    "description": "§c§lOfficial LifeStealZ Pack\n§7Credits to abb3v, and MDP",
+    "pack_format": 46,
+    "supported_formats": {
+      "min_inclusive": 16,
+      "max_inclusive": 99
+    }
+  },
+
+  "notes": {
+    "1": "If you wish to change the physical icons, modify the PNGs found in `assets/minecraft/textures/item`",
+    "2": "If you use any other material for your custom items, than a NETHER_STAR, then you must change the model files accordingly.",
+    "3": "Delete the `assets/minecraft/particles` if you wish to keep totem particles.",
+
+    "4": "To view totem animations, enable `playTotemEffect` in the config."
+  }
+}

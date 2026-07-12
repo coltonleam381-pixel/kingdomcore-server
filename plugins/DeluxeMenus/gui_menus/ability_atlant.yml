@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::atlant_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 9-10
+      - 18-19
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymenutwo'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 13-14
+      - 21-22
+    display_name: '&#2FA4E7&lAtlant Info'
+    lore:
+      - '&8Use: &fRMB launches a moving water attack.'
+      - '&8L3: &fSneak + RMB swaps Wall and Sphere mode.'
+      - '&8Identity: &fSpace control that keeps pressure while moving.'
+      - '&8Cooldown: &f50 seconds.'
+      - '&8Scaling: &fBigger coverage, stronger punish, better zone control.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 16-17
+      - 25-26
+    display_name: '&a&lChoose Atlant'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_atlantis%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability atlantis'

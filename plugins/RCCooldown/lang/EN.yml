@@ -1,0 +1,48 @@
+# English Language File for RC Cooldown Plugin
+
+# Cooldown messages
+cooldown_enchantment: '&c[RC Cooldown] Enchantment on cooldown! Remaining: &e{seconds}
+  &cseconds'
+cooldown_item: '&c[RC Cooldown] This item is on cooldown! Remaining: &e{seconds} &cseconds'
+cooldown_weapon: '&c[RC Cooldown] This weapon is on cooldown! Remaining: &e{seconds}
+  &cseconds'
+
+# Command messages
+command_no_permission: '&cYou don''t have permission to use this command!'
+command_usage: '&cUsage: /rccd <reload|list|add|delete>'
+command_reload_success: '&a[RC Cooldown] Configuration reloaded!'
+command_list_empty: '&e[RC Cooldown] No active cooldowns.'
+command_list_header: '&6=== Active Cooldowns ==='
+command_list_footer: '&6========================'
+command_list_item: '&a• &f{item} &7- &e{cooldown} &7sec &7({click_type})'
+command_list_enchantment: '&b• &fenchantment:{enchantment} &7- &e{cooldown} &7sec
+  &7({click_type})'
+
+# Add command
+command_add_usage: '&cUsage: /rccd add <item id or enchantment name> <right_click|left_click>
+  <seconds>'
+command_add_invalid_click: '&cInvalid click type! Use: right_click or left_click'
+command_add_invalid_cooldown: '&cCooldown must be greater than 0!'
+command_add_invalid_seconds: '&cInvalid number of seconds: {seconds}'
+command_add_item_success: '&a[RC Cooldown] Item {item} added with cooldown {cooldown}
+  seconds ({click_type})'
+command_add_enchantment_success: '&a[RC Cooldown] Enchantment {enchantment} added
+  with cooldown {cooldown} seconds ({click_type})'
+command_add_not_found: '&cNot found as item or enchantment: {item}'
+command_add_examples: '&eCheck spelling. Examples: DIAMOND_SWORD, riptide, channeling'
+
+# Delete command
+command_delete_usage: '&cUsage: /rccd delete <item id or enchantment name>'
+command_delete_item_success: '&a[RC Cooldown] Item {item} removed from config'
+command_delete_item_not_found: '&c[RC Cooldown] Item {item} not found in config'
+command_delete_enchantment_success: '&a[RC Cooldown] Enchantment {enchantment} removed
+  from config'
+command_delete_enchantment_not_found: '&c[RC Cooldown] Enchantment {enchantment} not
+  found in config'
+command_delete_not_found: '&cNot found as item or enchantment: {item}'
+
+# Other
+command_unknown: '&cUnknown command! Use: /rccd <reload|list|add|delete>'
+click_type_right: RMB
+click_type_left: LMB
+

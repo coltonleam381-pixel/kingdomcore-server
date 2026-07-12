@@ -1,0 +1,115 @@
+
+size: 53
+
+
+#default resource pack
+#menu_title: '&f'
+
+#UNCOMMENT FOR ITEMSADDER
+#menu_title: ':offset_-48::warps:'
+#THEN DELETE/COMMENT OUT THE MENU TITLE ON LINE 7
+
+items:
+  'the_end':
+    material: itemsadder-gui:blank
+    model_data: 10007        
+    slots:
+    - 0-2    
+    - 9-11
+    - 18-20        
+    display_name: '&#FFFF00&lThe End'
+    lore:
+    - '&r'
+    - '&7Click to warp to the End!'
+    click_commands:
+    - '[close]'
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] warp end'    
+    
+  'the_nether':
+    material: itemsadder-gui:blank
+    model_data: 10007        
+    slots:
+    - 3-5    
+    - 12-14
+    - 21-23        
+    display_name: '&#FF0000&lThe Nether'
+    lore:
+    - '&r'
+    - '&7Click to warp to the nether!'
+    click_commands:
+    - '[close]'
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] warp nether'    
+    
+  'arena':
+    material: itemsadder-gui:blank
+    model_data: 10007        
+    slots:
+    - 6-8    
+    - 15-17
+    - 24-26        
+    display_name: '&#FF00FF&lThe Arena'
+    lore:
+    - '&r'
+    - '&7Click to warp to the arena!'
+    click_commands:
+    - '[close]'
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] warp arena'        
+    
+    
+  'mines':
+    material: itemsadder-gui:blank
+    model_data: 10007        
+    slots:
+    - 27-29      
+    - 36-38      
+    - 45-47          
+    display_name: '&#00FF00&lThe Mines'
+    lore:
+    - '&r'
+    - '&7Click to warp to the Mines!'
+    click_commands:
+    - '[close]'
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] warp mines'    
+        
+        
+  'crates':
+    material: itemsadder-gui:blank
+    model_data: 10007        
+    slots:
+    - 30-32      
+    - 39-41      
+    - 48-50          
+    display_name: '&#00FFFF&lCrates'
+    lore:
+    - '&r'
+    - '&7Click to warp to the super pay to win crates!'
+    click_commands:
+    - '[close]'
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] warp crates'    
+    
+  'playerwarps':
+    material: itemsadder-gui:blank
+    model_data: 10007        
+    slots:
+    - 33-35    
+    - 42-44      
+    - 51-53          
+    display_name: '&#00FFAA&lPlayer Warps'
+    lore:
+    - '&r'
+    - '&7Click to warp to other player''s warps!'
+    click_commands:
+    - '[close]'
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] playerwarps'        
+    
+    
+        
+    
+ 
+#craftedcroix is the best

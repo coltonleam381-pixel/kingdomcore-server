@@ -38,6 +38,8 @@ banned-ips.json
 ops.json
 usercache.json
 *.json.bak_*
+whitelist.json.backup
+*.json.backup
 
 # --- Plugin runtime data ---
 plugins/*/data/

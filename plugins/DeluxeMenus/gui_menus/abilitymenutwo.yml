@@ -1,0 +1,97 @@
+
+
+size: 54
+
+# default resource pack
+# menu_title: '%img_offset_-48%%img_gui:abilitymenutwo%'
+
+# ItemsAdder title
+menu_title: ':offset_-48::abilitymenutwo:'
+
+items:
+  'atlantis':
+    material: itemsadder-gui:blank
+    slots:
+      - 0-2
+      - 9-11
+    display_name: '&#2FA4E7&lAtlantis'
+    click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] ability_atlant'
+
+  'heart_shield':
+    material: itemsadder-gui:blank
+    slots:
+      - 3-5
+      - 12-14
+    display_name: '&#FF4D4D&lHeart Shield'
+    click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] ability_heartshield'
+
+  'meteor':
+    material: itemsadder-gui:blank
+    slots:
+      - 6-8
+      - 15-17
+    display_name: '&#FFB266&lMeteor'
+    click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] ability_meteor'
+
+  'lifesteal':
+    material: itemsadder-gui:blank
+    slots:
+      - 18-20
+      - 27-29
+    display_name: '&#B34747&lLifesteal'
+    click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] ability_lifesteal'
+
+  'protector':
+    material: itemsadder-gui:blank
+    slots:
+      - 21-23
+      - 30-32
+    display_name: '&#C9E9FF&lProtector'
+    click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] ability_protector'
+
+  'recall':
+    material: itemsadder-gui:blank
+    slots:
+      - 24-26
+      - 33-35
+    display_name: '&#FFE98A&lRecall'
+    click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] ability_recall'
+
+  'berserk':
+    material: itemsadder-gui:blank
+    slots:
+      - 39-41
+      - 48-50
+    display_name: '&#FF6A3D&lBerserk'
+    click_commands:
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] ability_berserk'
+
+  'back_page':
+    material: itemsadder-gui:blank
+    slot: 45
+    display_name: '&c&lBack'
+    lore:
+      - '&7Return to page 1 abilities'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymen'

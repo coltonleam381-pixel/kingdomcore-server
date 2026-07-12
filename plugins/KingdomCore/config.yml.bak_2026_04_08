@@ -1,0 +1,133 @@
+display-name: KingdomCore
+
+storage:
+  type: sqlite
+  sqlite-file: kingdomcore.db
+  persist-cooldowns: false
+
+allowlist:
+  enabled: true
+
+spawn-protection:
+  worldguard-region: spawn_castle
+  npc-ability-names: []
+  npc-revive-names: []
+
+cooldowns:
+  micro-ms: 200
+
+hearts:
+  starting: 10
+  base-cap: 20
+  pvp-only-death-penalty: true
+  blocked-kick-message: "You are blocked. Find a revive beacon."
+  withdraw:
+    enabled: true
+
+
+items:
+  heart-item-id: kingdomcore:heart
+  crown-item-id: kingdomcore:crown
+  revive-beacon-id: kingdomcore:revive_beacon
+  mace-item-id: kingdomcore:mace
+  scythe-item-id: kingdomcore:scythe
+  warden-cp-item-id: kingdomcore:warden_cp
+  trident-item-id: kingdomcore:trident
+
+unique-items:
+  mace-recraft-hours: 120
+  scythe-recraft-hours: 120
+  trident-recraft-hours: 120
+  warden-cp-recraft-hours: 60
+
+upgrades:
+  level-1-cost: 3
+  level-2-cost: 4
+  level-3-cost: 5
+
+abilities:
+  - id: hulk
+    name: Hulk
+    base-cooldown-ms: 50000
+    short: Super jump slam
+    long: Launch up, choose landing, slam on arrival.
+  - id: thor
+    name: Thor
+    base-cooldown-ms: 50000
+    short: Mark and strike
+    long: Mark enemies then strike with lightning.
+  - id: zeus
+    name: Zeus
+    base-cooldown-ms: 50000
+    short: Lightning storm
+    long: L1 storms around you. L2/L3 target looked area (max 7/10 blocks).
+  - id: atlantis
+    name: Atlantis
+    base-cooldown-ms: 50000
+    short: Water wave
+    long: Launch a wave of water to knock back foes.
+  - id: skybreaker
+    name: Skybreaker
+    base-cooldown-ms: 50000
+    short: Sky slam
+    long: Launch up and slam down with force.
+  - id: meteor
+    name: Meteor
+    base-cooldown-ms: 50000
+    short: Meteor ride
+    long: Fly as meteor for 1/2/3s. SPACE exits early without explosion.
+  - id: dash
+    name: Dash
+    base-cooldown-ms: 50000
+    short: Quick dash
+    long: Leap where you look; L3 grants Speed II for 2 seconds.
+  - id: heart_shield
+    name: Heart Shield
+    base-cooldown-ms: 50000
+    short: Absorption shield
+    long: Gain temporary absorption based on max health.
+  - id: lifesteal
+    name: Lifesteal
+    base-cooldown-ms: 47000
+    short: Drain life
+    long: True-damage drain over 2 seconds, healing you each pulse.
+  - id: sanguine_fog
+    name: Sanguine Fog
+    base-cooldown-ms: 50000
+    short: Blinding fog
+    long: Create a fog that blinds enemies.
+  - id: recall
+    name: Recall
+    base-cooldown-ms: 60000
+    short: Delayed teleport
+    long: Teleport delay: L1=3s, L2=5s, L3 selectable 2/3/5/6s (LMB cycle).
+  - id: phase_step
+    name: Phase Step
+    base-cooldown-ms: 45000
+    short: Phase through foes
+    long: Blink through a target and debuff enemies you pass.
+  - id: berserk
+    name: Berserk
+    base-cooldown-ms: 50000
+    short: Combat fury
+    long: Buff timer shown in HUD; cooldown starts only after buff ends.
+  - id: protocol
+    name: Protocol
+    base-cooldown-ms: 90000
+    short: Death prevention
+    long: Fatal save with buffs, L2 immunity+regen, L3 summons Angel wolves.
+  - id: protector
+    name: Protector
+    base-cooldown-ms: 45000
+    short: Barrier dome
+    long: Create a protective barrier around yourself.
+  - id: ice_nova
+    name: Ice Nova
+    base-cooldown-ms: 50000
+    short: Freeze zone
+    long: Transform blocks in radius around you to ice temporarily.
+  - id: phase_walk
+    name: Phase Walk
+    base-cooldown-ms: 50000
+    short: Intangible phase
+    long: Temporarily become intangible and pass through walls.

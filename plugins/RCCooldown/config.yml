@@ -1,0 +1,38 @@
+# RC Cooldown Plugin Configuration
+# Language: EN, RU, UA, ES, DE
+lang: EN
+
+# Add items with their cooldowns
+# id: Minecraft item ID (e.g., MACE, DIAMOND_SWORD, BOW) or enchantment name (e.g., riptide)
+# enable: true/false - enable or disable cooldown for this item
+# cooldown: cooldown time in seconds
+# click_type: right_click or left_click - which mouse click to apply the cooldown
+
+items:
+  # Enchantments
+  enchantment:riptide:
+    enable: false
+    cooldown: 15
+    click_type: right_click
+  
+  # Items
+  ENDER_PEARL:
+    enable: false
+    cooldown: 20
+    click_type: right_click
+  GOLDEN_APPLE:
+    enable: false
+    cooldown: 5
+    click_type: right_click
+  ENCHANTED_GOLDEN_APPLE:
+    enable: true
+    cooldown: 30
+    click_type: right_click
+  FIREWORK_ROCKET:
+    enable: true
+    cooldown: 3
+    click_type: right_click
+  MACE:
+    enable: false
+    cooldown: 5
+    click_type: right_click

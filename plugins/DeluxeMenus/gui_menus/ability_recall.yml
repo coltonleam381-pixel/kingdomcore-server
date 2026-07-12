@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::recall_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 0-1
+      - 9-10
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymenutwo'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 12-13
+      - 4-5
+    display_name: '&#FFE98A&lRecall Info'
+    lore:
+      - '&8Use: &fRMB stores position and starts delayed return.'
+      - '&8Identity: &fBait tool that rewards setup and timing.'
+      - '&8Control: &fTop level lets you pick recall delay on demand.'
+      - '&8HUD: &fShows selected delay and live countdown.'
+      - '&8Cooldown: &f60 seconds.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 7-8
+      - 16-17
+    display_name: '&a&lChoose Recall'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_recall%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability recall'

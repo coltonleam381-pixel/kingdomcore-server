@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::dash_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 18-19
+      - 27-28
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymen'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 6-7
+      - 15-16
+    display_name: '&#D9D9D9&lDash Info'
+    lore:
+      - '&8Use: &fRMB leaps exactly toward your crosshair.'
+      - '&8Identity: &fFast reposition for chase, entry, or disengage.'
+      - '&8Safety: &fLanding won not punish you with fall damage.'
+      - '&8Cooldown: &f50 seconds.'
+      - '&8Scaling: &fStronger leap each level, L3 adds landing speed.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 33-34
+      - 42-43
+    display_name: '&a&lChoose Dash'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_dash%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability dash'

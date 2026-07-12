@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::hulk_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 9-10
+      - 18-19
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymen'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 13-14
+      - 21-22
+    display_name: '&#55FF55&lHulk Info'
+    lore:
+      - '&8Use: &fRMB launch, RMB confirm landing in the shown circle.'
+      - '&8Identity: &fVertical engage into instant area impact.'
+      - '&8Rhythm: &fYou commit first, then choose exact slam point.'
+      - '&8Cooldown: &fStarts after landing or miss.'
+      - '&8Scaling: &fHigher jump, wider reach, heavier impact.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 16-17
+      - 25-26
+    display_name: '&a&lChoose Hulk'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_hulk%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability hulk'

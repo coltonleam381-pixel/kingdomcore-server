@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>beer.devs</groupId>
+  <artifactId>FastNbt-jar</artifactId>
+  <name>FastNbt-jar</name>
+  <version>1.4.15</version>
+  <description>Spigot library to edit items NBT very fast</description>
+  <url>https://github.com/LoneDev6/FastNBT/FastNbt-jar</url>
+  <developers>
+    <developer>
+      <name>LoneDev</name>
+      <email>info@matteodev.it</email>
+      <url>https://github.com/LoneDev6/</url>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:https://github.com/LoneDev6/FastNBT.git/FastNbt-jar</connection>
+    <developerConnection>scm:git:https://github.com/LoneDev6/FastNBT.git/FastNbt-jar</developerConnection>
+    <url>https://github.com/LoneDev6/FastNBT/FastNbt-jar</url>
+  </scm>
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+    <repository>
+      <id>maven.apache.org</id>
+      <url>https://repo.maven.apache.org/maven2/</url>
+    </repository>
+    <repository>
+      <id>sonatype</id>
+      <url>https://oss.sonatype.org/content/groups/public/</url>
+    </repository>
+    <repository>
+      <id>spigotmc-repo</id>
+      <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+    </repository>
+    <repository>
+      <id>spigot-repo</id>
+      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+    </repository>
+    <repository>
+      <id>papermc</id>
+      <url>https://repo.papermc.io/repository/maven-public/</url>
+    </repository>
+  </repositories>
+</project>

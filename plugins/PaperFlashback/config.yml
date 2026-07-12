@@ -1,0 +1,40 @@
+# Paper Flashback configuration
+#
+# Durations accept values like:
+#   30m, 2h, 1d, PT30M
+#
+# Sizes accept values like:
+#   512MB, 2GB, 1048576
+
+default_encoding_mode: flashback_only
+world_name: ""
+server_name: ""
+output_root: recordings
+player_recording_path_pattern: players/{uuid}/{timestamp}
+chunk_recording_path_pattern: chunks/{name}/{timestamp}
+max_file_size: 4GB
+max_duration: 2h
+restart_after_max_file_size: false
+restart_after_max_duration: false
+recover_unsaved_recordings: true
+delete_recordings_after: disabled
+chunk_recorder_initial_load_radius: 2
+chunk_edge_padding: 1
+include_resource_pack_reference: true
+ignore_custom_payloads: false
+ignore_sound_packets: false
+ignore_light_packets: false
+ignore_chat_packets: true
+ignore_action_bar_packets: true
+ignore_scoreboard_packets: false
+optimize_explosion_packets: true
+optimize_entity_packets: true
+record_hotbar_if_supported: true
+automatic_player_recording_enabled: false
+automatic_player_recording_predicate: permission:paperflashback.auto
+all_players_mode_auto_record_new_joins: true
+auto_resume_player_recordings_on_rejoin: true
+flush_interval_ticks: 20
+async_write_threads: 2
+compression_level: 1
+debug_logging: false

@@ -1,0 +1,148 @@
+name: KingdomCore
+main: com.yourorg.kingdomcore.KingdomCorePlugin
+version: 1.0.0
+api-version: '1.21'
+author: KingdomCore
+commands:
+  ability:
+    description: Ability management
+    usage: /ability
+    permission: kingdomcore.admin
+  bounty391381:
+    description: Opens the bounty menu
+  chooseability:
+    description: Choose your ability
+    usage: /chooseability <arguments...>
+    permission: kingdomcore.choose
+  abilityupgrade:
+    description: Open ability upgrade menu
+    usage: /abilityupgrade
+  hearts:
+    description: Hearts management
+    usage: /hearts [amount] | /hearts <player> <amount> | /hearts give|add <player> <amount> | /hearts withdraw <amount>
+    permission: kingdomcore.admin
+  withdraw:
+    description: Withdraw hearts into physical items
+    usage: /withdraw <amount> | /withdraw <player> <amount>
+    permission: kingdomcore.withdraw
+  dimension:
+    description: Open or close dimensions
+    permission: kingdomcore.admin
+  pvp:
+    description: Toggle global PVP with countdown (OP/console only)
+    usage: /pvp <on|off|cancel>
+  spawnprotect:
+    description: Toggle spawn region protection (OP only)
+    usage: /spawnprotect [on|off|status]
+  spawnleave:
+    description: Lock players inside spawn regions (OP only)
+    usage: /spawnleave <on|off|status>
+  diamondbeam:
+    description: Toggle diamond block beacon beams (OP only)
+    usage: /diamondbeam <on|off|status|reload|rescan|thickness <0-5>>
+  combatspawn:
+    description: Per-player combat spawn entry bypass (OP only)
+    usage: /combatspawn <on|off> [player]
+  combatcd:
+    description: Toggle per-player post-combat NPC/chest cooldown bypass (OP only)
+    usage: /combatcd <on|off> [player]
+  allowlist:
+    description: KingdomCore allowlist
+    usage: /allowlist
+    permission: kingdomcore.admin
+  kingdomcore:
+    description: KingdomCore admin
+    usage: /kingdomcore
+    permission: kingdomcore.admin
+  revive:
+    description: Revive admin commands
+    usage: /revive
+    permission: kingdomcore.admin
+  revivemenu:
+    description: Open the revive menu GUI
+  abilitymenu:
+    description: Open the ability selection menu GUI
+  revivecancel:
+    description: Cancel revive input
+    usage: /revivecancel
+    permission: kingdomcore.admin
+  removeability:
+    description: Remove a player's ability (OP only)
+    usage: /removeability [player|ability] [ability]
+    permission: kingdomcore.admin
+  removelvl:
+    description: Reset ability level to 0
+    usage: /removelvl [player]
+    permission: kingdomcore.admin
+  cd:
+    description: Cooldown admin controls
+    usage: /cd skip [player] [ability_id]
+    permission: kingdomcore.admin
+  pdummy:
+    description: Spawn a stationary combat dummy
+    usage: /pdummy
+    permission: kingdomcore.admin
+  activateability:
+    description: Apply ability impact to yourself as enemy test
+    usage: /activateability <ability_id> [level]
+    permission: kingdomcore.admin
+  craftcustomitems:
+    description: Get all ingredients for custom items
+    usage: /craftcustomitems
+    permission: kingdomcore.admin
+  kcraft:
+    description: Craft a custom item directly
+    usage: /kcraft <item>
+  ksetmonument:
+    description: Set the location of the grey glass for monument
+    usage: /ksetmonument <item>
+    permission: kingdomcore.admin
+  kdelmonument:
+    description: Delete the monument location
+    usage: /kdelmonument <item>
+    permission: kingdomcore.admin
+  kreset:
+    description: Reset cooldown and presence of a custom item
+    usage: /kreset <item>
+    permission: kingdomcore.admin
+  kresetability:
+    description: Reset ability cooldown of a custom item for a specific player
+    usage: /kresetability <player> [item|all]
+    permission: kingdomcore.admin
+  kauth:
+    description: Force-unstick a player from PIN login lock
+    usage: /kauth <force|resetpin> <player>
+    permission: kingdomcore.admin
+  afk:
+    description: Enter AFK mode
+    usage: /afk
+  assasinevent:
+    description: Start the assassin event (console only)
+    usage: /assasinevent
+  invcheck:
+    description: View a player's inventory (GameAxion only)
+    usage: /invcheck <player>
+  heartscheck:
+    description: View a player's heart stats (GameAxion only)
+    usage: /heartscheck <player>
+  select:
+    description: WorldEdit-style selection tools (GameAxion/Struna only)
+    usage: /select <1|2|copy|paste|rotate|move>
+  100dog:
+    description: Get the 100dog fishing rod (GameAxion/Struna only)
+    usage: /100dog
+permissions:
+  kingdomcore.admin:
+    default: op
+  kingdomcore.choose:
+    default: true
+  kingdomcore.withdraw:
+    default: true
+softdepend:
+  - ItemsAdder
+  - Citizens
+  - CommandPanels
+  - WorldGuard
+  - DeluxeMenus
+  - FancyNpcs
+  - PlaceholderAPI

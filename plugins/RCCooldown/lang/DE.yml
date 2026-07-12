@@ -1,0 +1,54 @@
+# Deutsche Sprachdatei für das RC Cooldown Plugin
+
+# Cooldown-Nachrichten
+cooldown_enchantment: '&c[RC Cooldown] Verzauberung auf Cooldown! Verbleibend: &e{seconds}
+  &cSekunden'
+cooldown_item: '&c[RC Cooldown] Dieser Gegenstand ist auf Cooldown! Verbleibend: &e{seconds}
+  &cSekunden'
+cooldown_weapon: '&c[RC Cooldown] Diese Waffe ist auf Cooldown! Verbleibend: &e{seconds}
+  &cSekunden'
+
+# Befehlsnachrichten
+command_no_permission: '&cSie haben keine Berechtigung, diesen Befehl zu verwenden!'
+command_usage: '&cVerwendung: /rccd <reload|list|add|delete>'
+command_reload_success: '&a[RC Cooldown] Konfiguration neu geladen!'
+command_list_empty: '&e[RC Cooldown] Keine aktiven Cooldowns.'
+command_list_header: '&6=== Aktive Cooldowns ==='
+command_list_footer: '&6========================'
+command_list_item: '&a• &f{item} &7- &e{cooldown} &7Sek &7({click_type})'
+command_list_enchantment: '&b• &fenchantment:{enchantment} &7- &e{cooldown} &7Sek
+  &7({click_type})'
+
+# Add-Befehl
+command_add_usage: '&cVerwendung: /rccd add <Gegenstands-ID oder Verzauberungsname>
+  <right_click|left_click> <Sekunden>'
+command_add_invalid_click: '&cUngültiger Klicktyp! Verwenden Sie: right_click oder
+  left_click'
+command_add_invalid_cooldown: '&cCooldown muss größer als 0 sein!'
+command_add_invalid_seconds: '&cUngültige Anzahl von Sekunden: {seconds}'
+command_add_item_success: '&a[RC Cooldown] Gegenstand {item} mit Cooldown von {cooldown}
+  Sekunden hinzugefügt ({click_type})'
+command_add_enchantment_success: '&a[RC Cooldown] Verzauberung {enchantment} mit Cooldown
+  von {cooldown} Sekunden hinzugefügt ({click_type})'
+command_add_not_found: '&cWeder als Gegenstand noch als Verzauberung gefunden: {item}'
+command_add_examples: '&eÜberprüfen Sie die Rechtschreibung. Beispiele: DIAMOND_SWORD,
+  riptide, channeling'
+
+# Delete-Befehl
+command_delete_usage: '&cVerwendung: /rccd delete <Gegenstands-ID oder Verzauberungsname>'
+command_delete_item_success: '&a[RC Cooldown] Gegenstand {item} aus der Konfiguration
+  entfernt'
+command_delete_item_not_found: '&c[RC Cooldown] Gegenstand {item} nicht in der Konfiguration
+  gefunden'
+command_delete_enchantment_success: '&a[RC Cooldown] Verzauberung {enchantment} aus
+  der Konfiguration entfernt'
+command_delete_enchantment_not_found: '&c[RC Cooldown] Verzauberung {enchantment}
+  nicht in der Konfiguration gefunden'
+command_delete_not_found: '&cWeder als Gegenstand noch als Verzauberung gefunden:
+  {item}'
+
+# Andere
+command_unknown: '&cUnbekannter Befehl! Verwenden Sie: /rccd <reload|list|add|delete>'
+click_type_right: RMB
+click_type_left: LMB
+

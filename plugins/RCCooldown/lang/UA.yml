@@ -1,0 +1,49 @@
+# Український мовний файл для плагіна RC Cooldown
+
+# Повідомлення про кулдаун
+cooldown_enchantment: '&c[RC Cooldown] Зачарування на кулдауні! Залишилось: &e{seconds}
+  &cсекунд'
+cooldown_item: '&c[RC Cooldown] Цей предмет на кулдауні! Залишилось: &e{seconds} &cсекунд'
+cooldown_weapon: '&c[RC Cooldown] Ця зброя на кулдауні! Залишилось: &e{seconds} &cсекунд'
+
+# Повідомлення команд
+command_no_permission: '&cУ вас немає прав для використання цієї команди!'
+command_usage: '&cВикористання: /rccd <reload|list|add|delete>'
+command_reload_success: '&a[RC Cooldown] Конфігурацію перезавантажено!'
+command_list_empty: '&e[RC Cooldown] Немає активних кулдаунів.'
+command_list_header: '&6=== Активні кулдауни ==='
+command_list_footer: '&6========================'
+command_list_item: '&a• &f{item} &7- &e{cooldown} &7сек &7({click_type})'
+command_list_enchantment: '&b• &fenchantment:{enchantment} &7- &e{cooldown} &7сек
+  &7({click_type})'
+
+# Команда add
+command_add_usage: '&cВикористання: /rccd add <id предмета або назва зачарування>
+  <right_click|left_click> <секунди>'
+command_add_invalid_click: '&cНевірний тип кліку! Використовуйте: right_click або
+  left_click'
+command_add_invalid_cooldown: '&cКулдаун повинен бути більше 0!'
+command_add_invalid_seconds: '&cНевірна кількість секунд: {seconds}'
+command_add_item_success: '&a[RC Cooldown] Предмет {item} додано з кулдауном {cooldown}
+  секунд ({click_type})'
+command_add_enchantment_success: '&a[RC Cooldown] Зачарування {enchantment} додано
+  з кулдауном {cooldown} секунд ({click_type})'
+command_add_not_found: '&cНе знайдено ні як предмет, ні як зачарування: {item}'
+command_add_examples: '&eПеревірте правильність написання. Приклади: DIAMOND_SWORD,
+  riptide, channeling'
+
+# Команда delete
+command_delete_usage: '&cВикористання: /rccd delete <id предмета або назва зачарування>'
+command_delete_item_success: '&a[RC Cooldown] Предмет {item} видалено з конфігу'
+command_delete_item_not_found: '&c[RC Cooldown] Предмет {item} не знайдено в конфігу'
+command_delete_enchantment_success: '&a[RC Cooldown] Зачарування {enchantment} видалено
+  з конфігу'
+command_delete_enchantment_not_found: '&c[RC Cooldown] Зачарування {enchantment} не
+  знайдено в конфігу'
+command_delete_not_found: '&cНе знайдено ні як предмет, ні як зачарування: {item}'
+
+# Інше
+command_unknown: '&cНевідома команда! Використовуйте: /rccd <reload|list|add|delete>'
+click_type_right: ПКМ
+click_type_left: ЛКМ
+

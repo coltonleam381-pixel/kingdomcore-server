@@ -1,0 +1,13 @@
+{
+	"parent": "kingdomcore:item/trident",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, -180],
+			"translation": [0, 11, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -180],
+			"translation": [0, 11, 1]
+		}
+	}
+}

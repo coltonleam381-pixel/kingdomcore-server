@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::icenova_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 10-11
+      - 19-20
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymen'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 21-22
+      - 13-14
+    display_name: '&#8FE8FF&lIce Nova Info'
+    lore:
+      - '&8Use: &fRMB creates a freeze zone around you.'
+      - '&8Identity: &fArea denial that controls movement paths.'
+      - '&8Rhythm: &fCooldown begins after freeze duration ends.'
+      - '&8Durability: &fHigher levels keep the ice harder to break.'
+      - '&8Scaling: &fLarger zone, longer lock, stronger movement punish.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 15-16
+      - 24-25
+    display_name: '&a&lChoose Ice Nova'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_ice_nova%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability ice_nova'

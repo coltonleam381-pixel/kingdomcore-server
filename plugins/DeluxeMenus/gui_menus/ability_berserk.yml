@@ -1,0 +1,42 @@
+size: 54
+menu_title: ':offset_-48::berserk_gui:'
+items:
+  'back':
+    material: itemsadder-gui:blank
+    slots:
+      - 0-1
+      - 9-10
+    display_name: '&c&lBack'
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] abilitymenutwo'
+  'info':
+    material: itemsadder-gui:blank
+    slots:
+      - 25-26
+      - 34-35
+    display_name: '&#FF6A3D&lBerserk Info'
+    lore:
+      - '&8Use: &fRMB enters a short fury window.'
+      - '&8Identity: &fClose-range pressure with faster combat tempo.'
+      - '&8Rhythm: &fCooldown starts only when fury ends.'
+      - '&8Scaling: &fLonger uptime and stronger finishing pressure.'
+      - '&8Peak: &fTop level also adds extra speed while active.'
+  'choose':
+    material: itemsadder-gui:blank
+    slots:
+      - 7-8
+      - 16-17
+    display_name: '&a&lChoose Berserk'
+    click_requirement:
+      requirements:
+        available:
+          type: string equals ignorecase
+          input: '%kingdomcore_ability_available_berserk%'
+          output: 'yes'
+      deny_commands:
+        - '[sound] BLOCK_NOTE_BLOCK_BASS'
+        - '[message] &cAbility Taken.'
+    click_commands:
+      - '[close]'
+      - '[player] chooseability berserk'

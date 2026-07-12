@@ -1,0 +1,15 @@
+scythe:
+  blocks:
+  - world;-55;79;-145
+trident:
+  blocks:
+  - world;-50;79;-144
+crown:
+  blocks:
+  - world;-47;79;-137
+warden_cp:
+  blocks:
+  - world;-63;79;-137
+mace:
+  blocks:
+  - world;-60;79;-144

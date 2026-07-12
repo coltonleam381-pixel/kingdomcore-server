@@ -1,0 +1,10 @@
+info:
+  namespace: kingdomcore
+
+categories:
+  kingdomcore_items:
+    enabled: true
+    name: '&6Kingdom Core'
+    icon: "kingdomcore:crown"
+    items:
+      - "kingdomcore:*"

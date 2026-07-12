@@ -1,0 +1,383 @@
+display-name: KingdomCore
+
+storage:
+  type: sqlite
+  sqlite-file: kingdomcore.db
+  persist-cooldowns: true
+
+allowlist:
+  enabled: false
+
+client-lockdown:
+  enabled: true
+  block-seed-command: true
+  op-bypass: false
+  kick-message: |-
+    §cDisallowed client detected.
+    §7Remove cheat, minimap, replay, or xray mods/packs.
+    §7Matched: §f{pattern}
+  forbidden-patterns:
+    - wurst
+    - xaero
+    - xray
+    - x_ray
+    - x-ray
+    - minimap
+    - mini_map
+    - mini-map
+    - journeymap
+    - journey_map
+    - journey-map
+    - voxelmap
+    - voxel_map
+    - mapwriter
+    - worldmap
+    - world_map
+    - antiqueatlas
+    - oreesp
+    - ore_finder
+    - wallhack
+    - meteorclient
+    - aristois
+    - liquidbounce
+    - impactclient
+    - inertiaclient
+    - chestesp
+    - playeresp
+    - replaymod
+    - replay_mod
+    - replay-mod
+    - replayrestrict
+
+tab-prefixes:
+  enabled: true
+  players:
+    GameAxion:
+      label: Owner
+      color: YELLOW
+      bold: false
+
+chat-styles:
+  enabled: true
+  players:
+    GameAxion:
+      color: YELLOW
+      chat-color: YELLOW
+      bold: true
+    # Team 69
+    kristoferrrrr:
+      label: "69"
+      color: GOLD
+      bold: true
+    HamiltonLMAO:
+      label: "69"
+      color: GOLD
+      bold: true
+    Bernardo2079:
+      label: "69"
+      color: GOLD
+      bold: true
+    # Team 2
+    waveymc_:
+      label: "2"
+      color: GREEN
+      bold: true
+    sasa1ele:
+      label: "2"
+      color: GREEN
+      bold: true
+    landonorris:
+      label: "2"
+      color: GREEN
+      bold: true
+    # Team 67
+    Alkns:
+      label: "67"
+      color: AQUA
+      bold: true
+    cofi5:
+      label: "67"
+      color: AQUA
+      bold: true
+    Nikadavise:
+      label: "67"
+      color: AQUA
+      bold: true
+    # Team 1
+    StrunaOtStunny:
+      label: "1"
+      color: RED
+      bold: true
+    dumb4reason:
+      label: "1"
+      color: RED
+      bold: true
+    # Team 10
+    ezz_player:
+      label: "1"
+      color: RED
+      bold: true
+    # Team 77
+    Yosaifmrj_:
+      label: "77"
+      color: LIGHT_PURPLE
+      bold: true
+    1xqi:
+      label: "77"
+      color: LIGHT_PURPLE
+      bold: true
+    bobitzaa:
+      label: "77"
+      color: LIGHT_PURPLE
+      bold: true
+    MonsterrBee:
+      label: "99"
+      color: BLUE
+      bold: true
+    The_Angel:
+      label: "99"
+      color: BLUE
+      bold: true
+    DengerNudol:
+      label: "99"
+      color: BLUE
+      bold: true
+    IamKay1:
+      label: "77"
+      color: LIGHT_PURPLE
+      bold: true
+    # Team 74
+
+mob-rules:
+  disable-phantoms: true
+
+tnt-minecart:
+  enabled: true
+  damage-multiplier: 0.7
+
+# Villager POI helper — releases unreachable bed/job claims and steers unemployed villagers to nearby free workstations.
+villager-beds:
+  enabled: true
+  max-distance: 17
+  babies-only: true
+  use-taxicab-distance: true
+  release-job-sites: true
+  job-site-max-distance: 4
+  prefer-nearby-free-jobs: true
+  free-job-search-radius: 16
+  free-job-claim-radius: 3
+  free-job-check-interval-ticks: 20
+  potential-job-max-distance: 2
+
+# Custom brewing recipes (mirrors vanilla Strength I + redstone -> 8 min).
+potion-brewing:
+  long-strong-strength:
+    enabled: true
+    duration-ticks: 9600
+
+# Cartographer trade overrides (existing + future cartographers).
+villager-trades:
+  cartographer:
+    glass-pane-for-emerald:
+      enabled: true
+      glass-panes: 5
+  cleric:
+    # Master cleric (brewing): adds blaze rods alongside vanilla XP bottle trades.
+    blaze-rod-for-emerald:
+      enabled: true
+      emeralds: 32
+      blaze-rods: 1
+
+# Silent villager spawn egg compensation queued every restart (delivered on next login, no chat).
+restart-villager-eggs:
+  enabled: true
+  queue-on-startup: true
+  players:
+    GameAxion: 20
+
+inv-check:
+  allowed-players:
+    - GameAxion
+    - StrunaOtStunny
+
+combat-rules:
+  # Operators are NOT exempt by default. List names here only for test dummies.
+  exempt-players: []
+  # When true, ops can enter spawn while combat-tagged (legacy global toggle)
+  op-spawn-entry-bypass: false
+  # Players who can enter spawn during combat (/combatspawn on <player>)
+  combat-spawn-bypass-players: []
+  # Players with combat CD bypass (/combatcd off) — no post-combat NPC/chest lock
+  combat-cd-bypass-players: []
+  # Ender pearl cooldown while combat-tagged (seconds between throws)
+  pearl-combat-cooldown-seconds: 10
+  # Ender pearls blocked for this many seconds after combat ends
+  pearl-block-post-tag-seconds: 15
+
+spawn-protection:
+  enabled: true
+  worldguard-region: spawn_castle
+  worldguard-regions:
+    - spawn_castle
+    - spawn
+  npc-ability-names: []
+  npc-revive-names: []
+
+spawn-leave-lock:
+  enabled: false
+
+diamond-beams:
+  enabled: true
+  thickness: 1.0
+  height: 256
+  interval-ticks: 5
+  scan-on-startup: true
+  scan-min-y: 70
+  scan-max-y: 95
+  particle-size: 1.15
+  color:
+    red: 80
+    green: 220
+    blue: 255
+
+world-border:
+  enabled: true
+  world: world
+  worlds:
+    - world
+    - world_nether
+    - world_the_end
+  center-x: 0
+  center-z: 0
+  radius: 3000
+  per-world:
+    world_nether:
+      center-x: 0
+      center-z: 0
+      radius: 1000
+  warning-distance: 50
+  damage-amount: 0.2
+  damage-buffer: 5
+
+cooldowns:
+  micro-ms: 200
+
+hearts:
+  starting: 10
+  craft-max: 15
+  progression-max: 20
+  crown-bonus: 10
+  pvp-only-death-penalty: true
+  blocked-kick-message: "You are blocked. Find a revive beacon."
+  withdraw:
+    enabled: true
+
+
+items:
+  heart-item-id: kingdomcore:heart
+  crown-item-id: kingdomcore:crown
+  revive-beacon-id: kingdomcore:revive_beacon
+  mace-item-id: kingdomcore:mace
+  scythe-item-id: kingdomcore:scythe
+  warden-cp-item-id: kingdomcore:warden_cp
+  trident-item-id: kingdomcore:trident
+
+unique-items:
+  mace-recraft-hours: 24
+  mace-hit-cooldown-seconds: 30
+  scythe-recraft-hours: 24
+  trident-recraft-hours: 24
+  warden-cp-recraft-hours: 24
+  crown-recraft-hours: 24
+
+upgrades:
+  level-1-cost: 3
+  level-2-cost: 4
+  level-3-cost: 5
+
+abilities:
+  - id: hulk
+    name: Hulk
+    base-cooldown-ms: 50000
+    short: Super jump slam
+    long: "Use: RMB launch then land in circle; Cooldown: 50s (lower on higher levels); L1: 2 hearts, radius 2, range 8, height 7; L2: 3 hearts, radius 4, range 16, height 8.5; L3: 4 hearts, radius 4, range 30, height 10; Higher level = better."
+  - id: thor
+    name: Thor
+    base-cooldown-ms: 50000
+    short: Mark and strike
+    long: "Use: RMB mark target, LMB strike marked; Cooldown: 50s (lower on higher levels); L1: 1 mark, range 5, mark time 5s, 1 strike, 2 hearts; L2: 3 marks, range 6, mark time 7s, 2 strikes, 2.5 hearts; L3: 7 marks, range 8, mark time 10s, 3 strikes, 3 hearts + blindness; Higher level = better."
+  - id: zeus
+    name: Zeus
+    base-cooldown-ms: 50000
+    short: Lightning storm
+    long: "Use: RMB starts lightning storm in a radius; Cooldown: 50s; Damage per lightning hit: 0.5 heart; L1: 30 pulses in 3s, radius 6; L2: 73 pulses in 5s, cast range 7, radius 8; L3: 120 pulses in 5s, cast range 10, radius 10 + slowness I; Higher level = better."
+  - id: atlantis
+    name: Atlantis
+    base-cooldown-ms: 50000
+    short: Water wave
+    long: "Use: RMB cast wave, L3 sneak+RMB toggles mode; Cooldown: 50s; L1: Wall 5x5, range 7, 1 heart/tick; L2: Wall 7x7, range 12, 2 hearts/tick; L3: Wall or Sphere (max radius 12), 2-2.5 hearts/tick; Wave lasts 2s, hits every 0.6s."
+  - id: skybreaker
+    name: Skybreaker
+    base-cooldown-ms: 50000
+    short: Sky slam
+    long: "Use: RMB quick rise and slam; Duration: ~0.7s total; Cooldown: 50s; L1: 2 hearts, radius 3; L2: 3 hearts, radius 3.5, blindness 1s, slowness 1s, caster speed I + regen I; L3: 4 hearts, radius 5, blindness 1.5s, weakness 2s, slowness 1s, caster speed I + strength I + regen II; Higher level = better."
+  - id: meteor
+    name: Meteor
+    base-cooldown-ms: 50000
+    short: Meteor ride
+    long: "Use: RMB fly, SPACE early exit (no explosion); Cooldown: L1 55s, L2 50s, L3 50s; L1: 1s flight, end blast radius 3, 2 hearts, burn 2s; L2: 2s flight, end blast radius 4, 2.5 hearts, burn 3s; L3: 3s flight, end blast radius 6, 3 hearts, burn 4s + knock-up; Higher level = better."
+  - id: dash
+    name: Dash
+    base-cooldown-ms: 50000
+    short: Quick dash
+    long: "Use: RMB leap where looking; Cooldown: 50s; L1: power 1.05, vertical 0.28, no fall damage for 2.5s; L2: power 1.35, vertical 0.34; L3: power 1.65, vertical 0.40 + Speed II for 2s on landing; Higher level = better."
+  - id: heart_shield
+    name: Heart Shield
+    base-cooldown-ms: 50000
+    short: Absorption shield
+    long: "Use: RMB gain absorption and buffs; Cooldown: 50s; L1: +6 hearts absorption for 5s; L2: +10 hearts for 7s + Regen I 3s + Invisibility 3s; L3: +16 hearts for 10s + Regen II 3s + Invisibility 5s + Resistance I 2s + Speed (+1 tier) 5s; Higher level = better."
+  - id: lifesteal
+    name: Lifesteal
+    base-cooldown-ms: 47000
+    short: Drain life
+    long: "Use: RMB starts drain; Duration: 2s; Cooldown: 50s (lower on higher levels, after drain); L1: radius 8, 1 target, drain/heal 0.5 heart per pulse; L2: 3 targets, 0.75 heart per pulse; L3: 5 targets, 1 heart per pulse + Strength I for 2s; Higher level = better."
+  - id: sanguine_fog
+    name: Sanguine Fog
+    base-cooldown-ms: 50000
+    short: Blinding fog
+    long: "Use: RMB creates fog in radius 7; Duration: 5/7/8s; Cooldown: 50s (lower on higher levels, after end); L1: blindness pulses; L2: blindness + random facing; L3: adds 0.3 heart pulses + caster Speed I; Higher level = better."
+  - id: recall
+    name: Recall
+    base-cooldown-ms: 60000
+    short: Delayed teleport
+    long: "Use: RMB set return point and delay; Cooldown: 60s; L1: 3s delay; L2: 5s delay + Speed II + Regen II for 3s after teleport; L3: LMB cycles 2/3/5/6s + same buffs + Resistance II for 3s after teleport; Higher level = better."
+  - id: phase_step
+    name: Phase Step
+    base-cooldown-ms: 45000
+    short: Phase through foes
+    long: "Use: RMB on entity to phase through; Cooldown: 45s (lower on higher levels); L1: range 3, applies slowness; L2: range 4, applies slowness + weakness; L3: range 5, applies slowness II + weakness + blindness and caster Strength I for 1s; Higher level = better."
+  - id: berserk
+    name: Berserk
+    base-cooldown-ms: 50000
+    short: Combat fury
+    long: "Use: RMB enter berserk; Duration: 5/6/7s; Cooldown: 50s (lower on higher levels, starts after buff ends); L1: +25% attack speed; L2: +25% attack speed + forced crit hits; L3: +25% attack speed + forced crit hits + Speed (+1 tier); Higher level = better."
+  - id: protocol
+    name: Protocol
+    base-cooldown-ms: 120000
+    short: Death prevention
+    long: "Use: Passive, RMB only shows status; Trigger: auto on fatal hit; Cooldown: 120s after trigger; L1: 5s core buffs (Speed/FireRes/Strength/Resistance I); L2: 7s core buffs II + 1.5s immunity + Regen I 2s; L3: 8s core buffs + Resistance III + 2 Angel wolves; Higher level = better."
+  - id: protector
+    name: Protector
+    base-cooldown-ms: 45000
+    short: Barrier dome
+    long: "Use: RMB spawns fixed shield sphere; Cooldown: 45s; L1: 4s, radius 3, blocks crossing and projectiles; L2: 7s, radius 3, also pushes entities already inside; L3: 10s, radius 4, edge hit every 2s + top heal drop + ability immunity window; Higher level = better."
+  - id: ice_nova
+    name: Ice Nova
+    base-cooldown-ms: 50000
+    short: Freeze zone
+    long: "Use: RMB freezes nearby blocks; Caster gets Strength I for 5s; Duration: 5/7/9s; Cooldown: 50s (lower on L3, after end); L1: radius 5, slowness I + blindness 2s on ice; L2: radius 7, slowness II + blindness 2s, ice unbreakable; L3: radius 9, slowness III + weakness I + blindness 2s, ice unbreakable."
+  - id: phase_walk
+    name: Phase Walk
+    base-cooldown-ms: 50000
+    short: Intangible phase
+    long: "Use: RMB phase through walls; Duration: 3/5/7s; Cooldown: 50s; L1: damage immune + invisibility + night vision; L2: Speed I while active; L3: Speed II + Regen I while active; Higher level = better."
